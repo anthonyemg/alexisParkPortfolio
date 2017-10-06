@@ -1,20 +1,29 @@
 import React from 'react';
+import SweetScroll from 'sweet-scroll';
 
 import particleConfig from '../../../../particlesjs-homeConfig.json';
 
 class Home extends React.Component {
   constructor(props) {
     super(props);
+    this.scrollDown = this.scrollDown.bind(this);
   }
   componentDidMount() {
     particlesJS('particles', particleConfig);
   }
+  scrollDown() {
+    const sweetScroll = new SweetScroll();
+    const height = window.innerHeight;
+    sweetScroll.to(height, 0);
+    console.log('scrolling down')
+  }
   render() {
     return (
-      <div className='page-container'>
+      <div className='page-container' id='container'>
         <div className='page-wrapperTop' id='particles'>
           <span>ALEXIS</span>
           <span>PARK</span>
+          <i className='home-scrollButton fa fa-angle-down fa-lg' onClick={() => this.scrollDown()} />
         </div>
         <div className='page-wrapperBottom'>
           <div className='page-bottomText'>

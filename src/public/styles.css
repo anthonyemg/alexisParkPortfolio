@@ -112,3 +112,8 @@ body {
   position: absolute;
   bottom: 20px;
 }
+
+.highlighted-text {
+  color: rgb(255,26,0);
+  text-decoration: none;
+}

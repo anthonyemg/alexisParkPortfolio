@@ -28,9 +28,9 @@ class Home extends React.Component {
         <div className='page-wrapperBottom'>
           <div className='page-bottomText'>
             <span>Hi there! I'm glad you found me.</span>
-            <span>Here you'll find some of my latest work samples, and some of my doodles.</span>
+            <span>Here you'll find some of my <a href='/#/works' className='highlighted-text'>latest work samples</a>, and some of <a href='/#/for-fun' className='highlighted-text'>my doodles</a>.</span>
             <span>I think there's some really good stuff here - I hope you think so too.</span>
-            <span>Talk to me. I look forward to working with you!</span>
+            <span><a href='/#/contact' className='highlighted-text'>Talk to me</a>. I look forward to working with you!</span>
           </div>
           <div className='page-bottomLinks'>
             <i  className='fa fa-linkedin fa-lg' />

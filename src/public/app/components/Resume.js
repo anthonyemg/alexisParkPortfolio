@@ -8,6 +8,7 @@ class Resume extends React.Component {
   }
   componentDidMount() {
     particlesJS('particles', particleConfig);
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
   render() {
     return (

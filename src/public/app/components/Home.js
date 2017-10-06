@@ -1,13 +1,18 @@
 import React from 'react';
 
+import particleConfig from '../../../../particlesjs-config.json';
+
 class Home extends React.Component {
   constructor(props) {
     super(props);
   }
+  componentDidMount() {
+    particlesJS('particles', particleConfig);
+  }
   render() {
     return (
       <div className='home-container'>
-        <div className='home-wrapperTop'>
+        <div className='home-wrapperTop' id='particles'>
           <span>ALEXIS</span>
           <span>PARK</span>
         </div>

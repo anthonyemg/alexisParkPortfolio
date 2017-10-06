@@ -19,6 +19,27 @@ body {
 
 }
 
+#particles-js {
+  display: block;
+  vertical-align: bottom;
+  width: 100vw;
+  min-height: 100%;
+}
+
+#particles-js .particles-js-canvas-el {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+}
+
+.particles-js-canvas-el {
+  position: fixed;
+}
+
+
 .menu-container {
   width: 100%;
   height: 74px;

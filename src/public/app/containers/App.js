@@ -10,7 +10,7 @@ import Contact from '../components/Contact';
 
 const App = () => (
   <Router>
-    <div>
+    <div className='app'>
       <Menu  />
       <Route exact path='/' render={() => (
         <Home />

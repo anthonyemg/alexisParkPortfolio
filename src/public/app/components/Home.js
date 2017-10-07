@@ -1,5 +1,6 @@
 import React from 'react';
 import SweetScroll from 'sweet-scroll';
+// import MobileMenu from './MobileMenu';
 
 import particleConfig from '../../../../particlesjs-homeConfig.json';
 
@@ -42,6 +43,7 @@ class Home extends React.Component {
             </a>
           </div>
         </div>
+        {/* <MobileMenu /> */}
       </div>
     )
   }

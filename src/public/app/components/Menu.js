@@ -22,6 +22,9 @@ class Menu extends React.Component {
             <a href='/#/contact'>CONTACT</a>
           </div>
         </div>
+        <div className='menu-containerBurger' onClick={this.props.showMobileMenu}>
+          <i className='fa fa-bars fa-lg' />
+        </div>
       </div>
     )
   }

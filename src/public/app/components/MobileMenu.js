@@ -8,16 +8,16 @@ class MobileMenu extends React.Component {
     return(
       <div className='mobilemenu-container'>
         <div>
-          <a href='/#/'>HOME</a>
+          <a href='/#/' onClick={this.props.showMobileMenu}>HOME</a>
         </div>
           <div>
-          <a href='/#/works'>WORKS</a>
+          <a href='/#/works' onClick={this.props.showMobileMenu}>WORKS</a>
         </div>
         <div>
-          <a href='/#/resume'>RESUME</a>
+          <a href='/#/resume' onClick={this.props.showMobileMenu}>RESUME</a>
         </div>
         <div>
-          <a href='/#/contact'>CONTACT</a>
+          <a href='/#/contact' onClick={this.props.showMobileMenu}>CONTACT</a>
         </div>
       </div>
     )

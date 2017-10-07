@@ -31,7 +31,11 @@ class App extends React.Component {
           <Menu
             showMobileMenu = {this.showMobileMenu}
           />
-          {this.state.showMobileMenu && <MobileMenu /> }
+          {this.state.showMobileMenu &&
+            <MobileMenu
+              showMobileMenu = {this.showMobileMenu}
+            />
+          }
           <Route exact path='/' render={() => (
             <Home />
           )} />

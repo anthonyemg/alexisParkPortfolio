@@ -44,7 +44,7 @@ body {
   font-size: 16px;
   letter-spacing: 2px;
   color: rgb(172,172,172);
-  position: fixed;
+  /*position: fixed;*/
   z-index: 1;
 }
 .menu-wrapper {
@@ -66,7 +66,7 @@ body {
 }
 
 .page-container {
-
+  margin-top: -74px;
 }
 
 .page-wrapperTop {
@@ -94,7 +94,7 @@ body {
 
 .page-bottomText {
   background-color: rgb(242,242,242);
-  height: 300px;
+  height: 100%;
   padding: 60px;
   display: flex;
   justify-content: space-between;

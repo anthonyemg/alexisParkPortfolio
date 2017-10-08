@@ -61,6 +61,10 @@ body {
   z-index: 1;
 }
 
+.menu-links:hover {
+  color: rgb(140,140,140);
+}
+
 .menu-containerBurger {
   display: none;
   z-index: 1;

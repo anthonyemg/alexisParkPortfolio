@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 class MobileMenu extends React.Component {
   constructor(props) {
@@ -8,16 +9,41 @@ class MobileMenu extends React.Component {
     return(
       <div className='mobilemenu-container'>
         <div>
-          <a href='/#/' onClick={this.props.showMobileMenu}>HOME</a>
-        </div>
-          <div>
-          <a href='/#/works' onClick={this.props.showMobileMenu}>WORKS</a>
+          <NavLink
+            className='mobilemenu-links'
+            exact
+            to="/"
+            activeStyle={{color: 'rgb(255,255,255)'}}
+            onClick={this.props.showMobileMenu}
+            >HOME
+          </NavLink>
         </div>
         <div>
-          <a href='/#/resume' onClick={this.props.showMobileMenu}>RESUME</a>
+          <NavLink
+            className='mobilemenu-links'
+            to="/works"
+            activeStyle={{color:'rgb(255,255,255)'}}
+            onClick={this.props.showMobileMenu}
+            >WORKS
+          </NavLink>
         </div>
         <div>
-          <a href='/#/contact' onClick={this.props.showMobileMenu}>CONTACT</a>
+          <NavLink
+            className='mobilemenu-links'
+            to="/resume"
+            activeStyle={{color:'rgb(255,255,255)'}}
+            onClick={this.props.showMobileMenu}
+             >RESUME
+          </NavLink>
+        </div>
+        <div>
+          <NavLink
+            className='mobilemenu-links'
+            to="/contact"
+            activeStyle={{color: 'rgb(255,255,255)'}}
+            onClick={this.props.showMobileMenu}
+             >CONTACT
+          </NavLink>
         </div>
       </div>
     )

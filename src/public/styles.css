@@ -156,7 +156,7 @@ body {
   cursor: default;
 }
 
-.page-bottomLinks {
+.footerLinks {
   height: 140px;
   color: rgb(255,255,255);
   display: flex;
@@ -164,7 +164,7 @@ body {
   align-items: center;
 }
 
-.page-bottomLinks a {
+.footerLinks a {
   color: rgb(0,0,0);
   margin: 8px;
   font-size: 13px;
@@ -179,7 +179,7 @@ body {
   border-radius: 16px;
 }
 
-.page-bottomLinks a:hover {
+.footerLinks a:hover {
   background-color: white!important;
   color: black!important;
 }

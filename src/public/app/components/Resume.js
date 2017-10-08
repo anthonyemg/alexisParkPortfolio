@@ -1,6 +1,6 @@
 import React from 'react';
-
 import particleConfig from '../../../../particlesjs-resumeConfig.json';
+import FooterLinks from './FooterLinks';
 
 class Resume extends React.Component {
   constructor(props) {
@@ -157,14 +157,7 @@ class Resume extends React.Component {
                 </div>
 
               {/* </div> */}
-          <div className='page-bottomLinks'>
-            <a href='https://www.linkedin.com/in/alexispark/' target='about_blank'>
-              <i className='fa fa-linkedin fa-lg' />
-            </a>
-            <a href='https://twitter.com/theuxdesigner' target='about_blank'>
-              <i className='fa fa-twitter fa-lg' />
-            </a>
-          </div>
+          <FooterLinks />
         </div>
       </div>
     )

@@ -1,16 +1,12 @@
 import React from 'react';
 import SweetScroll from 'sweet-scroll';
 import particleConfig from '../../../../particlesjs-homeConfig.json';
+import FooterLinks from './FooterLinks';
 
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      container: 'white',
-      icon: 'black',
-    }
     this.scrollDown = this.scrollDown.bind(this);
-    this.handleBottomLinkHover = this.handleBottomLinkHover.bind(this);
   }
   componentDidMount() {
     particlesJS('particles', particleConfig);
@@ -20,19 +16,6 @@ class Home extends React.Component {
     const sweetScroll = new SweetScroll();
     const height = window.innerHeight;
     sweetScroll.to(height, 0);
-  }
-  handleBottomLinkHover() {
-    if(this.state.test === 'rgba(255,255,255,0.4)') {
-      this.setState({
-        container: 'white',
-        icon: 'black',
-      })
-    } else {
-      this.setState({
-        container: 'rgba(255,255,255,0.4)',
-        icon: 'rgb(76,76,76)',
-      })
-    }
   }
 
   render() {
@@ -50,14 +33,9 @@ class Home extends React.Component {
             <span>I think there's some really good stuff here - I hope you think so too.</span>
             <span><a href='/#/contact' className='highlighted-text'>Talk to me</a>. I look forward to working with you!</span>
           </div>
-          <div className='page-bottomLinks'>
-            <a href='https://www.linkedin.com/in/alexispark/' target='about_blank'  style={{backgroundColor: this.state.container, color: this.state.icon}} onMouseEnter={this.handleBottomLinkHover} onMouseLeave={this.handleBottomLinkHover} >
-              <i className='fa fa-linkedin fa-lg' />
-            </a>
-            <a href='https://twitter.com/theuxdesigner' target='about_blank' style={{backgroundColor: this.state.container, color: this.state.icon}} onMouseEnter={this.handleBottomLinkHover} onMouseLeave={this.handleBottomLinkHover} >
-              <i className='fa fa-twitter fa-lg' />
-            </a>
-          </div>
+
+          <FooterLinks />
+
         </div>
       </div>
     )

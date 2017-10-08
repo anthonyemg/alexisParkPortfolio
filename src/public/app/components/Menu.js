@@ -37,7 +37,11 @@ class Menu extends React.Component {
           </NavLink>
         </div>
         <div className='menu-containerBurger' onClick={this.props.handleShowMobileMenu}>
-          <i className='fa fa-bars fa-lg' />
+          <button className={`hamburger hamburger--spring ${this.props.showMobileMenu ? 'is-active' : ''}`} type='button'>
+            <span className='hamburger-box'>
+              <span className='hamburger-inner'></span>
+            </span>
+          </button>
         </div>
       </div>
     )

@@ -34,13 +34,12 @@ class App extends React.Component {
         <div className='app' style={this.state.shiftMenu ? {float: 'right', paddingRight: '80%'} : {float: 'right', paddingRight: '0%'}}>
           <Menu
             handleShowMobileMenu = {this.handleShowMobileMenu}
+            showMobileMenu = {this.state.showMobileMenu}
           />
-          {/* {this.state.showMobileMenu && */}
           <MobileMenu
             handleShowMobileMenu = {this.handleShowMobileMenu}
             showMobileMenu = {this.state.showMobileMenu}
           />
-          {/* } */}
           <Route exact path='/' render={() => (
             <Home />
           )} />

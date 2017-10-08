@@ -162,6 +162,10 @@ body {
   align-items: center;
 }
 
+.contact-form {
+  z-index: 1;
+}
+
 .page-bottomText span {
   z-index: 1;
   cursor: default;

@@ -1,7 +1,5 @@
 import React from 'react';
 import SweetScroll from 'sweet-scroll';
-// import MobileMenu from './MobileMenu';
-
 import particleConfig from '../../../../particlesjs-homeConfig.json';
 
 class Home extends React.Component {
@@ -17,11 +15,10 @@ class Home extends React.Component {
     const sweetScroll = new SweetScroll();
     const height = window.innerHeight;
     sweetScroll.to(height, 0);
-    console.log('scrolling down')
   }
   render() {
     return (
-      <div className='page-container' id='container'>
+      <div className='page-container'>
         <div className='page-wrapperTop' id='particles'>
           <span>ALEXIS</span>
           <span>PARK</span>
@@ -43,7 +40,6 @@ class Home extends React.Component {
             </a>
           </div>
         </div>
-        {/* <MobileMenu /> */}
       </div>
     )
   }

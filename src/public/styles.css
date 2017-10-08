@@ -30,7 +30,7 @@ body {
 
 .particles-js-canvas-el {
   position: fixed;
-  z-index: -1;
+  z-index: 0;
 }
 
 .menu-container {
@@ -54,6 +54,10 @@ body {
   align-items: center;
 }
 
+.menu-wrapper div {
+  z-index: 1;
+}
+
 .menu-wrapper a {
   text-decoration: none;
   font-size: 13px;
@@ -63,6 +67,7 @@ body {
 
 .menu-containerBurger {
   display: none;
+  z-index: 1;
 }
 
 .page-container {
@@ -101,13 +106,14 @@ body {
   align-items: center;
   flex-direction: column;
   font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 14px;
   box-sizing: border-box;
+  line-height: 40px;
 }
 
 .page-bottomText span {
-  word-wrap: break-word;
-  width: 280px;
-  text-align: center;
+  z-index: 1;
 }
 
 .page-bottomLinks {
@@ -122,6 +128,7 @@ body {
   color: rgb(255,255,255);
   margin: 16px;
   font-size: 20px;
+  z-index: 1;
 }
 
 .home-scrollButton {
@@ -154,7 +161,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: solid 1px rgb(255,0,0);
+  border-bottom: solid 1px rgb(250,0,0);
 }
 
 .mobilemenu-container div a {
@@ -168,6 +175,10 @@ body {
   color: rgb(200,132,124);
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .menu-container {
     height: 70px;
@@ -177,10 +188,14 @@ body {
   .menu-wrapper {
     display: none;
   }
-  /*.mobilemenu-container {
-    display: flex;
-  }*/
   .menu-containerBurger {
     display: block;
+  }
+  .page-bottomText span {
+    word-wrap: break-word;
+    text-align: center;
+    background-color: rgb(242,242,242);
+    line-height: 34px;
+    font-size: 13px;
   }
 }

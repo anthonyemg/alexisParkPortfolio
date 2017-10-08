@@ -21,8 +21,12 @@ class Contact extends React.Component {
             <span>contact..</span>
           </div>
           <div className='page-bottomLinks'>
-            <i  className='fa fa-linkedin fa-lg' />
-            <i  className='fa fa-twitter fa-lg' />
+            <a href='https://www.linkedin.com/in/alexispark/' target='about_blank'>
+              <i className='fa fa-linkedin fa-lg' />
+            </a>
+            <a href='https://twitter.com/theuxdesigner' target='about_blank'>
+              <i className='fa fa-twitter fa-lg' />
+            </a>
           </div>
         </div>
       </div>

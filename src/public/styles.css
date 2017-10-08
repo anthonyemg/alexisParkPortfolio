@@ -12,6 +12,19 @@ body {
 
 }
 
+.app {
+  width: 100%;
+}
+
+/*#app:hover {
+  float: right;
+  padding-right: 85vw;
+}*/
+
+/*.mobilemenu-container:hover {
+  right: -80%;
+}*/
+
 #particles-js {
   display: block;
   vertical-align: bottom;
@@ -128,7 +141,6 @@ body {
   grid-template-columns: repeat(2, 40vw);
   grid-template-rows: repeat(5, 40vw);
   grid-gap: 20px;
-  min-width: 300px;
   z-index: 1;
 }
 

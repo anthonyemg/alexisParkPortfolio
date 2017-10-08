@@ -15,19 +15,22 @@ class App extends React.Component {
     super(props);
     this.state = {
       showMobileMenu: false,
+      shiftMenu: false,
     }
     this.showMobileMenu = this.showMobileMenu.bind(this);
   }
   showMobileMenu() {
-    const showHide = this.state.showMobileMenu ? false : true;
+    const showHideMobileMenu = this.state.showMobileMenu ? false : true;
+    const shiftMenu = this.state.shiftMenu ? false : true;
     this.setState({
-      showMobileMenu: showHide,
+      showMobileMenu: showHideMobileMenu,
+      shiftMenu: shiftMenu,
     })
   }
   render() {
     return (
       <Router>
-        <div>
+        <div className='app' style={this.state.shiftMenu ? {float: 'right', paddingRight: '80%'} : {}}>
           <Menu
             showMobileMenu = {this.showMobileMenu}
           />

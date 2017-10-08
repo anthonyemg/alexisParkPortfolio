@@ -25,7 +25,7 @@ class Home extends React.Component {
           <i className='home-scrollButton fa fa-angle-down fa-lg' onClick={() => this.scrollDown()} />
         </div>
         <div className='page-wrapperBottom'>
-          <div className='page-bottomText'>
+          <div className='home-bottomText page-bottomText'>
             <span>Hi there! I'm glad you found me.</span>
             <span>Here you'll find some of my <a href='/#/works' className='highlighted-text'>latest work samples</a>, and some of <a href='/#/for-fun' className='highlighted-text'>my doodles</a>.</span>
             <span>I think there's some really good stuff here - I hope you think so too.</span>

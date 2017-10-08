@@ -17,7 +17,7 @@ class Works extends React.Component {
           <span>WORKS</span>
         </div>
         <div className='page-wrapperBottom'>
-          <div className='page-bottomText'>
+          <div className='works-bottomText page-bottomText'>
             <span>Selected Works</span>
           </div>
           <div className='page-bottomLinks'>

@@ -17,7 +17,7 @@ class Resume extends React.Component {
           <span>RESUME</span>
         </div>
         <div className='page-wrapperBottom'>
-          <div className='page-bottomText'>
+          <div className='resume-bottomText page-bottomText'>
 
             {/* <div className="sqs-block-content"> */}
               <p className="text-align-center">
@@ -36,18 +36,16 @@ class Resume extends React.Component {
                 <br /><br />
                 <strong>User Experience Designer</strong>
                 <br />
-                Hotwire - Seattle, WA - June 2016 to December 2016
+                <span style={{fontSize:'12pt'}}>Hotwire - Seattle, WA - June 2016 to December 2016</span>
                 <br />
                 Responsibilities
                 <br />
                 <span style={{fontSize:'15pt'}}>• </span>
-                <span style={{fontSize:'10pt'}}>
-                  Performed lots of iterative design for Hotwire's new responsive site - mobile break heavy.
-                </span>
+                <span style={{fontSize:'10pt'}}>Performed lots of iterative design for Hotwire's new responsive site - mobile break heavy.</span>
                 <br /><br />
                 <strong>Sr User Experience Designer</strong>
                 <br />
-                Starbucks - Seattle, WA - November 2015 to June 2016
+                <span style={{fontSize:'12pt'}}>Starbucks - Seattle, WA - November 2015 to June 2016</span>
                 <br />
                 Responsibilities
                 <br />

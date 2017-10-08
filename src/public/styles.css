@@ -103,13 +103,27 @@ body {
   padding: 60px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: column;
   font-weight: 300;
   letter-spacing: 2px;
-  font-size: 14px;
   box-sizing: border-box;
+}
+
+.home-bottomText {
+  align-items: center;
   line-height: 40px;
+}
+
+.works-bottomText {
+  align-items: center;
+}
+
+.resume-bottomText {
+  line-height: 28px;
+}
+
+.contact-bottomText {
+
 }
 
 .page-bottomText span {
@@ -191,7 +205,7 @@ body {
   .menu-containerBurger {
     display: block;
   }
-  .page-bottomText span {
+  .home-bottomText span {
     word-wrap: break-word;
     text-align: center;
     background-color: rgb(242,242,242);

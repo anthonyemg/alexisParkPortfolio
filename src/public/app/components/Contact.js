@@ -17,7 +17,7 @@ class Contact extends React.Component {
           <span>LETTUCE TALK</span>
         </div>
         <div className='page-wrapperBottom'>
-          <div className='page-bottomText'>
+          <div className='contact-bottomText page-bottomText'>
             <span>contact..</span>
           </div>
           <div className='page-bottomLinks'>

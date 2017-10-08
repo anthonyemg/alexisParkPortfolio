@@ -17,9 +17,10 @@ class App extends React.Component {
       showMobileMenu: false,
       shiftMenu: false,
     }
-    this.showMobileMenu = this.showMobileMenu.bind(this);
+    this.handleShowMobileMenu = this.handleShowMobileMenu.bind(this);
   }
-  showMobileMenu() {
+  handleShowMobileMenu() {
+    console.log('test')
     const showHideMobileMenu = this.state.showMobileMenu ? false : true;
     const shiftMenu = this.state.shiftMenu ? false : true;
     this.setState({
@@ -30,15 +31,16 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div className='app' style={this.state.shiftMenu ? {float: 'right', paddingRight: '80%'} : {}}>
+        <div className='app' style={this.state.shiftMenu ? {float: 'right', paddingRight: '80%'} : {float: 'right', paddingRight: '0%'}}>
           <Menu
-            showMobileMenu = {this.showMobileMenu}
+            handleShowMobileMenu = {this.handleShowMobileMenu}
           />
-          {this.state.showMobileMenu &&
-            <MobileMenu
-              showMobileMenu = {this.showMobileMenu}
-            />
-          }
+          {/* {this.state.showMobileMenu && */}
+          <MobileMenu
+            handleShowMobileMenu = {this.handleShowMobileMenu}
+            showMobileMenu = {this.state.showMobileMenu}
+          />
+          {/* } */}
           <Route exact path='/' render={() => (
             <Home />
           )} />

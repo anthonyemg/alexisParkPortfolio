@@ -7,14 +7,14 @@ class MobileMenu extends React.Component {
   }
   render() {
     return(
-      <div className='mobilemenu-container'>
+      <div className='mobilemenu-container' style={this.props.showMobileMenu ? {left: '20%'} : {}}>
         <div>
           <NavLink
             className='mobilemenu-links'
             exact
             to="/"
             activeStyle={{color: 'rgb(255,255,255)'}}
-            onClick={this.props.showMobileMenu}
+            onClick={this.props.handleShowMobileMenu}
             >HOME
           </NavLink>
         </div>
@@ -23,7 +23,7 @@ class MobileMenu extends React.Component {
             className='mobilemenu-links'
             to="/works"
             activeStyle={{color:'rgb(255,255,255)'}}
-            onClick={this.props.showMobileMenu}
+            onClick={this.props.handleShowMobileMenu}
             >WORKS
           </NavLink>
         </div>
@@ -32,7 +32,7 @@ class MobileMenu extends React.Component {
             className='mobilemenu-links'
             to="/resume"
             activeStyle={{color:'rgb(255,255,255)'}}
-            onClick={this.props.showMobileMenu}
+            onClick={this.props.handleShowMobileMenu}
              >RESUME
           </NavLink>
         </div>
@@ -41,7 +41,7 @@ class MobileMenu extends React.Component {
             className='mobilemenu-links'
             to="/contact"
             activeStyle={{color: 'rgb(255,255,255)'}}
-            onClick={this.props.showMobileMenu}
+            onClick={this.props.handleShowMobileMenu}
              >CONTACT
           </NavLink>
         </div>

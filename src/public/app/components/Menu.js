@@ -36,7 +36,7 @@ class Menu extends React.Component {
              >CONTACT
           </NavLink>
         </div>
-        <div className='menu-containerBurger' onClick={this.props.showMobileMenu}>
+        <div className='menu-containerBurger' onClick={this.props.handleShowMobileMenu}>
           <i className='fa fa-bars fa-lg' />
         </div>
       </div>

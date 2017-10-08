@@ -14,16 +14,10 @@ body {
 
 .app {
   width: 100%;
+  padding-right: 0%;
+  transition: padding-right 0.3s;
+  -webkit-transition: padding-right 0.3s; /* Safari */
 }
-
-/*#app:hover {
-  float: right;
-  padding-right: 85vw;
-}*/
-
-/*.mobilemenu-container:hover {
-  right: -80%;
-}*/
 
 #particles-js {
   display: block;
@@ -215,9 +209,12 @@ body {
   position: fixed;
   top: 0;
   right: 0;
+  left:100%;
   z-index: 2;
   display: flex;
   flex-direction: column;
+  transition: left 0.3s;
+  -webkit-transition: left 0.3s; /* Safari */
 }
 
 .mobilemenu-container div {

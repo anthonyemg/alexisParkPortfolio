@@ -44,7 +44,6 @@ body {
   font-size: 16px;
   letter-spacing: 2px;
   color: rgb(172,172,172);
-  /*position: fixed;*/
   z-index: 1;
 }
 .menu-wrapper {
@@ -54,15 +53,12 @@ body {
   align-items: center;
 }
 
-.menu-wrapper div {
-  z-index: 1;
-}
-
-.menu-wrapper a {
+.menu-links {
   text-decoration: none;
   font-size: 13px;
   font-weight: 500;
   color: rgb(172,172,172);
+  z-index: 1;
 }
 
 .menu-containerBurger {

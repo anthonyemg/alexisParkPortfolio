@@ -100,7 +100,6 @@ body {
 .page-bottomText {
   background-color: rgb(242,242,242);
   height: 100%;
-  padding: 60px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -112,22 +111,51 @@ body {
 .home-bottomText {
   align-items: center;
   line-height: 40px;
+  padding: 60px;
 }
 
 .works-bottomText {
   align-items: center;
+  padding: 100px 0;
+}
+
+.works-bottomText span {
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 40vw);
+  grid-template-rows: repeat(5, 40vw);
+  grid-gap: 20px;
+  min-width: 300px;
+  z-index: 1;
+}
+
+.works-gridComponent {
+  max-width: 470px;
+  max-height: 470px;
+}
+
+.works-gridComponent img {
+  width: 100%;
+  height: 100%;
 }
 
 .resume-bottomText {
   line-height: 28px;
+  padding: 60px;
 }
 
 .contact-bottomText {
-
+  align-items: center;
+  padding: 60px;
 }
 
 .page-bottomText span {
   z-index: 1;
+  cursor: default;
 }
 
 .page-bottomLinks {
@@ -149,6 +177,7 @@ body {
   z-index: 1;
   position: absolute;
   bottom: 20px;
+  cursor: pointer;
 }
 
 .highlighted-text {

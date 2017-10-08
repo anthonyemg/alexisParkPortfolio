@@ -17,10 +17,10 @@ class Contact extends React.Component {
     particlesJS('particles', particleConfig);
     document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
-  handleFirstNameChange(e, field) {
-    const newState = {}
-    newState[field] = e.target.value;
-    this.setState(newState);
+  handleFirstNameChange(e) {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
   }
   render() {
     return (
@@ -34,27 +34,31 @@ class Contact extends React.Component {
             <form className='contact-form' action='' method='post'>
               <input
                 type='text'
+                name='firstName'
                 placeholder='First Name'
                 value={this.state.firstName}
-                onChange={(e) => this.handleFirstNameChange(e,'firstName')}
+                onChange={this.handleFirstNameChange}
               />
               <input
                 type='text'
+                name='lastName'
                 placeholder='Last Name'
                 value={this.state.lastName}
-                onChange={(e) => this.handleFirstNameChange(e,'lastName')}
+                onChange={this.handleFirstNameChange}
               />
               <input
                 type='text'
+                name='email'
                 placeholder='Email'
                 value={this.state.email}
-                onChange={(e) => this.handleFirstNameChange(e,'email')}
+                onChange={this.handleFirstNameChange}
               />
               <input
                 type='text'
+                name='message'
                 placeholder='Message'
                 value={this.state.message}
-                onChange={(e) => this.handleFirstNameChange(e,'message')}
+                onChange={this.handleFirstNameChange}
               />
               <input type='submit' placeholder='save' />
             </form>

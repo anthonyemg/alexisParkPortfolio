@@ -12,6 +12,7 @@ class Contact extends React.Component {
       message: '',
     }
     this.handleFirstNameChange = this.handleFirstNameChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
   componentDidMount() {
     particlesJS('particles', particleConfig);
@@ -22,6 +23,20 @@ class Contact extends React.Component {
       [e.target.name]: e.target.value,
     });
   }
+  handleSubmit() {
+    console.log('submitting')
+    fetch('/contactus', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      // body: JSON.stringify({data: this.state.searchQuery}),
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log('client received this data ,', data)
+      // this.props.handleVideoListUpdate(data);
+    })
+    .catch(err => console.log(err));
+  }
   render() {
     return (
       <div className='page-container'>
@@ -30,38 +45,58 @@ class Contact extends React.Component {
         </div>
         <div className='page-wrapperBottom'>
           <div className='contact-bottomText page-bottomText'>
-            <span>contact..</span>
-            <form className='contact-form' action='' method='post'>
-              <input
-                type='text'
-                name='firstName'
-                placeholder='First Name'
-                value={this.state.firstName}
-                onChange={this.handleFirstNameChange}
-              />
-              <input
-                type='text'
-                name='lastName'
-                placeholder='Last Name'
-                value={this.state.lastName}
-                onChange={this.handleFirstNameChange}
-              />
-              <input
-                type='text'
-                name='email'
-                placeholder='Email'
-                value={this.state.email}
-                onChange={this.handleFirstNameChange}
-              />
-              <input
-                type='text'
-                name='message'
-                placeholder='Message'
-                value={this.state.message}
-                onChange={this.handleFirstNameChange}
-              />
-              <input type='submit' placeholder='save' />
-            </form>
+            {/* <form className='contact-form' action='' method='post'> */}
+            <div className='contact-form'>
+              <div className='contact-nameContainer'>
+                <span>Name*</span>
+                <div className='contact-firstLastNamesContainer'>
+                  <div>
+                    <input
+                      type='text'
+                      name='firstName'
+                      // placeholder='First Name'
+                      value={this.state.firstName}
+                      onChange={this.handleFirstNameChange}
+                    />
+                    <span>First Name</span>
+                  </div>
+                  <div>
+                    <input
+                      type='text'
+                      name='lastName'
+                      // placeholder='Last Name'
+                      value={this.state.lastName}
+                      onChange={this.handleFirstNameChange}
+                    />
+                    <span>Last Name</span>
+                  </div>
+                </div>
+              </div>
+              <div className='contact-emailContainer'>
+                <span>Your Email Address*</span>
+                <input
+                  type='text'
+                  name='email'
+                  // placeholder='Email'
+                  value={this.state.email}
+                  onChange={this.handleFirstNameChange}
+                />
+              </div>
+              <div className='contact-messageContainer'>
+                <span>Message*</span>
+                <textarea
+                  type='text'
+                  name='message'
+                  // placeholder='Message'
+                  value={this.state.message}
+                  onChange={this.handleFirstNameChange}
+                />
+              </div>
+              <div className='contact-buttonContainer'>
+                <button onClick={this.handleSubmit}>SUBMIT</button>
+              </div>
+            </div>
+            {/* </form> */}
           </div>
         <FooterLinks />
         </div>

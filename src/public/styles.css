@@ -153,9 +153,17 @@ body {
   height: 100%;
 }
 
+.resume-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(242,242,242);
+}
+
 .resume-bottomText {
   line-height: 28px;
   padding: 100px 60px;
+  max-width: 940px;
 }
 
 .contact-bottomText {

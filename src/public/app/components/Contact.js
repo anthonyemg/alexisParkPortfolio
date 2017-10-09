@@ -45,7 +45,6 @@ class Contact extends React.Component {
         </div>
         <div className='page-wrapperBottom'>
           <div className='contact-bottomText page-bottomText'>
-            {/* <form className='contact-form' action='' method='post'> */}
             <div className='contact-form'>
               <div className='contact-nameContainer'>
                 <span>Name*</span>
@@ -54,7 +53,6 @@ class Contact extends React.Component {
                     <input
                       type='text'
                       name='firstName'
-                      // placeholder='First Name'
                       value={this.state.firstName}
                       onChange={this.handleFirstNameChange}
                     />
@@ -64,7 +62,6 @@ class Contact extends React.Component {
                     <input
                       type='text'
                       name='lastName'
-                      // placeholder='Last Name'
                       value={this.state.lastName}
                       onChange={this.handleFirstNameChange}
                     />
@@ -77,7 +74,6 @@ class Contact extends React.Component {
                 <input
                   type='text'
                   name='email'
-                  // placeholder='Email'
                   value={this.state.email}
                   onChange={this.handleFirstNameChange}
                 />
@@ -87,7 +83,6 @@ class Contact extends React.Component {
                 <textarea
                   type='text'
                   name='message'
-                  // placeholder='Message'
                   value={this.state.message}
                   onChange={this.handleFirstNameChange}
                 />
@@ -96,7 +91,6 @@ class Contact extends React.Component {
                 <button onClick={this.handleSubmit}>SUBMIT</button>
               </div>
             </div>
-            {/* </form> */}
           </div>
         <FooterLinks />
         </div>

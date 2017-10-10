@@ -17,9 +17,13 @@ class WorksGallery extends React.Component {
         <div className='page-wrapperTop' id='particles'>
           <span>WORKS</span>
         </div>
-        <div className='page-wrapperBottom'>
-          <div className='works-bottomText page-bottomText'>
+
+        <div className='works-wrapperBottom'>
+
+          <div className='works-bottomText'>
+
             <span>Selected Works</span>
+
             <div className='works-grid'>
 
               <div className='works-gridComponent'>

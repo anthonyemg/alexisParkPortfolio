@@ -141,16 +141,39 @@ body {
   grid-template-rows: repeat(5, 40vw);
   grid-gap: 20px;
   z-index: 1;
+  max-width: 960px;
 }
 
 .works-gridComponent {
   max-width: 470px;
   max-height: 470px;
+  position: relative;
 }
 
 .works-gridComponent img {
   width: 100%;
   height: 100%;
+}
+
+.works-gridHover {
+  display: flex;
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  color: rgba(0,0,0,0);
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.works-gridComponent:hover .works-gridHover {
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
 }
 
 .resume-wrapper {
@@ -502,5 +525,8 @@ body {
   .contact-form {
     width: 100%;
     height: 423px;
+  }
+  .works-gridHover {
+    font-size: 14px;
   }
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import FooterLinks from '../components/FooterLinks';
 
-const PartnerApp = () => (
+const Qriously = () => (
   <div>
     <div className='page-container'>
       <div className='works-wrapperTop'>
-        <span>Partner App</span>
+        <span>Qriously</span>
       </div>
       <div className='page-wrapperBottom'>
         <div className='worksTemplate-bottomText page-bottomText'>
@@ -20,4 +20,4 @@ const PartnerApp = () => (
   </div>
 );
 
-export default PartnerApp;
+export default Qriously;

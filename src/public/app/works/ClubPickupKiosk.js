@@ -1,18 +1,16 @@
 import React from 'react';
-
 import FooterLinks from '../components/FooterLinks';
 
-const test = () => (
+const ClubPickupKiosk= () => (
   <div>
     <div className='page-container'>
       <div className='works-wrapperTop'>
-        <span>Partner app</span>
+        <span>Club Pickup Kiosk</span>
       </div>
       <div className='page-wrapperBottom'>
         <div className='worksTemplate-bottomText page-bottomText'>
           <div>
 
-            <h1>TEST2</h1>
 
           </div>
         </div>
@@ -22,4 +20,4 @@ const test = () => (
   </div>
 );
 
-export default test;
+export default ClubPickupKiosk;

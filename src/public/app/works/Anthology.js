@@ -11,6 +11,7 @@ const Anthology = () => (
         <div className='worksTemplate-bottomText page-bottomText'>
           <div>
 
+            <p>Comming soon..</p>
 
           </div>
         </div>

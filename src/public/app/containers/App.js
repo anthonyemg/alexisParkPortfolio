@@ -6,10 +6,10 @@ import Menu from '../components/Menu';
 import MobileMenu from '../components/MobileMenu';
 
 import Home from '../components/Home';
-import Works from '../components/Works';
+import WorksGallery from '../components/WorksGallery';
 import Resume from '../components/Resume';
 import Contact from '../components/Contact';
-import WorksTemplate from '../components/WorksTemplate';
+import Works from '../components/Works';
 
 class App extends React.Component {
   constructor(props) {
@@ -21,7 +21,6 @@ class App extends React.Component {
     this.handleShowMobileMenu = this.handleShowMobileMenu.bind(this);
   }
   handleShowMobileMenu() {
-    console.log('test')
     const showHideMobileMenu = this.state.showMobileMenu ? false : true;
     const shiftMenu = this.state.shiftMenu ? false : true;
     this.setState({
@@ -41,21 +40,11 @@ class App extends React.Component {
             handleShowMobileMenu = {this.handleShowMobileMenu}
             showMobileMenu = {this.state.showMobileMenu}
           />
-          <Route exact path='/' render={() => (
-            <Home />
-          )} />
-          <Route exact path='/works' render={() => (
-            <Works />
-          )} />
-          <Route exact path='/resume' render={() => (
-            <Resume />
-          )} />
-          <Route exact path='/contact' render={() => (
-            <Contact />
-          )} />
-          <Route exact path='/workstemplate' render={() => (
-            <WorksTemplate />
-          )} />
+          <Route exact path='/' component={Home} />
+          <Route exact path='/worksgallery' component={WorksGallery} />
+          <Route exact path='/resume' component={Resume} />
+          <Route exact path='/contact' component={Contact} />
+          <Route path='/works' component={Works} />
         </div>
       </Router>
     )

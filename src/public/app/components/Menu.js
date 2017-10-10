@@ -19,7 +19,7 @@ class Menu extends React.Component {
           </NavLink>
           <NavLink
             className='menu-links'
-            to="/works"
+            to="/worksgallery"
             activeStyle={{color:'rgb(255,255,255)'}}
             >WORKS
           </NavLink>

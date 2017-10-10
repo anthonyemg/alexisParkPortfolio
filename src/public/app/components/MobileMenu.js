@@ -21,7 +21,7 @@ class MobileMenu extends React.Component {
         <div>
           <NavLink
             className='mobilemenu-links'
-            to="/works"
+            to="/worksgallery"
             activeStyle={{color:'rgb(255,255,255)'}}
             onClick={this.props.handleShowMobileMenu}
             >WORKS

@@ -17,7 +17,6 @@ class Home extends React.Component {
     const height = window.innerHeight;
     sweetScroll.to(height, 0);
   }
-
   render() {
     return (
       <div className='page-container'>
@@ -33,9 +32,7 @@ class Home extends React.Component {
             <span>I think there's some really good stuff here - I hope you think so too.</span>
             <span><a href='/#/contact' className='highlighted-text'>Talk to me</a>. I look forward to working with you!</span>
           </div>
-
           <FooterLinks />
-
         </div>
       </div>
     )

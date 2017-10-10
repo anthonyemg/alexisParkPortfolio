@@ -9,6 +9,7 @@ import Home from '../components/Home';
 import Works from '../components/Works';
 import Resume from '../components/Resume';
 import Contact from '../components/Contact';
+import WorksTemplate from '../components/WorksTemplate';
 
 class App extends React.Component {
   constructor(props) {
@@ -51,6 +52,9 @@ class App extends React.Component {
           )} />
           <Route exact path='/contact' render={() => (
             <Contact />
+          )} />
+          <Route exact path='/workstemplate' render={() => (
+            <WorksTemplate />
           )} />
         </div>
       </Router>
